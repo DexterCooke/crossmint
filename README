@@ -1,0 +1,30 @@
+# Crossmint Megaverse Challenge
+My submission for the Crossmint Megaverse coding challenge.
+
+## Features
+- Phase 1: Automated X shape using Polyanets
+- Phase 2: Full Megaverse automated from `/goal` map
+- Includes retry and rate-limit handling
+- Reset scripts for full grid cleanup
+
+## How to Run
+1️ Clone repo:
+git clone https://github.com/DexterCooke/crossmint_challenge.git
+cd crossmint_challenge
+
+2 Setup virtualenv:
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+
+3 Phase 1: 
+python polyanet_cross.py
+
+4 Phase 2: 
+python phase2_create_megaverse.py
+
+5 Reset phase 1: 
+python reset_polyanets.py
+
+6 Reset phase 2:
+python reset_phase_2.py
